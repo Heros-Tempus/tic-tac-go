@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:tic_tac_go"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -18,6 +18,37 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="5" Margin="0,0,0,25" HorizontalAlignment="Center"/>
+        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="5" Margin="0,0,0,25" HorizontalAlignment="Center" Grid.Column="1"/>
+        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="5" Margin="25,0,25,0"/>
+        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="5" Margin="25,0,25,0"/>
         <Button Content="Reset" HorizontalAlignment="Left" Margin="39,15,0,15" VerticalAlignment="Center"/>
+        <Viewbox Grid.Row="1">
+            <TextBlock x:Name="txt_0_0" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1" MouseDown="txt_0_0_MouseDown" Text="_"/>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="1">
+            <TextBlock x:Name="txt_0_1" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="2">
+            <TextBlock x:Name="txt_0_2" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
+        <Viewbox Grid.Row="2">
+            <TextBlock x:Name="txt_1_0" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
+        <Viewbox Grid.Row="2" Grid.Column="1">
+            <TextBlock x:Name="txt_1_1" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
+        <Viewbox Grid.Row="2" Grid.Column="2">
+            <TextBlock x:Name="txt_1_2" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
+        <Viewbox Grid.Row="3">
+            <TextBlock x:Name="txt_2_0" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
+        <Viewbox Grid.Row="3" Grid.Column="1">
+            <TextBlock x:Name="txt_2_1" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
+        <Viewbox Grid.Row="3" Grid.Column="2">
+            <TextBlock x:Name="txt_2_2" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1"/>
+        </Viewbox>
     </Grid>
 </Window>

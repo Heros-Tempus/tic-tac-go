@@ -24,5 +24,20 @@ namespace tic_tac_go
         {
             InitializeComponent();
         }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txt_0_0_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.txt_0_0.Text = "X";
+        }
+
+        private void Viewbox_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
