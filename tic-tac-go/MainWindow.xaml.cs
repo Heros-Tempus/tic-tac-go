@@ -63,7 +63,7 @@ namespace tic_tac_go
                 txt_challenge.Text = "";
                 game_over = checkForWin();
             }
-            if (game_over)
+            if (game_over && txt_challenge.Text != "O Wins")
             {
                 txt_challenge.Text = "X Wins";
             }
@@ -84,7 +84,7 @@ namespace tic_tac_go
                 txt_challenge.Text = "";
                 game_over = checkForWin();
             }
-            if (game_over)
+            if (game_over && txt_challenge.Text != "X Wins")
             {
                 txt_challenge.Text = "O Wins";
             }
