@@ -49,7 +49,7 @@ namespace tic_tac_go
                     if (mouseWasDownOn.Tag != null)
                     {
                         string elementTag = mouseWasDownOn.Tag.ToString();
-                        txt_challenge.Text = listB[Int32.Parse(elementTag)];
+                        txt_challenge.Text = listB[Int32.Parse(elementTag) % listA.Count];
                         selection = (TextBlock)mouseWasDownOn;
                     }
                 }
