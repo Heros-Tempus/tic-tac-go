@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tic_tac_go"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tic Tac Go" Height="450" Width="800" Background="#FF2F4858" Foreground="#FFFF4343">
     <Grid x:Name="main_grid" Loaded="Grid_Loaded" MouseDown="Grid_MouseDown">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -18,14 +18,14 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Border BorderBrush="Black" BorderThickness="5" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="5" Margin="0,0,0,25" Grid.Row="1"/>
-        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="5" Margin="0,0,0,25" Grid.Column="1"/>
-        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="5" Margin="25,0,25,0"/>
-        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="5" Margin="25,0,25,0"/>
-        <Button x:Name="btn_Reset" Content="Reset" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" FontSize="16" Click="btn_Reset_Click"/>
-        <Button x:Name="btn_X" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="60,5,0,0" FontSize="24" Panel.ZIndex="1" Click="btn_X_Click" Grid.ColumnSpan="3"/>
-        <Button x:Name="btn_O" Content="O" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,5,0,0" FontSize="24" Panel.ZIndex="1" Click="btn_O_Click" Grid.ColumnSpan="3"/>
-        <Button x:Name="btn_NoDecision" Content="No Decision" HorizontalAlignment="Left" FontSize="24" Panel.ZIndex="1" Margin="60,45,0,0" Click="btn_NoDecision_Click" Grid.ColumnSpan="3" Width="135" VerticalAlignment="Top"/>
+        <Border BorderBrush="#FF00A896" BorderThickness="5" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="5" Margin="0,0,0,25" Grid.Row="1"/>
+        <Border BorderBrush="#FF00A896" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="5" Margin="0,0,0,25" Grid.Column="1"/>
+        <Border BorderBrush="#FF00A896" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="5" Margin="25,0,25,0"/>
+        <Border BorderBrush="#FF00A896" BorderThickness="5" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="5" Margin="25,0,25,0"/>
+        <Button x:Name="btn_Reset" Content="Reset" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" FontSize="24" Click="btn_Reset_Click" Background="#FF2F4858" BorderBrush="#FF00A896" Foreground="#FF00A896" Height="35.9233333333333"/>
+        <Button x:Name="btn_X" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="75,45,0,0" FontSize="24" Panel.ZIndex="1" Click="btn_X_Click" Grid.ColumnSpan="3" Background="#FF2F4858" BorderBrush="#FF00A896" Foreground="#FFE4572E"/>
+        <Button x:Name="btn_O" Content="O" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="160,45,0,0" FontSize="24" Panel.ZIndex="1" Click="btn_O_Click" Grid.ColumnSpan="3" Background="#FF2F4858" BorderBrush="#FF00A896" Foreground="#FFF6AE2D"/>
+        <Button x:Name="btn_NoDecision" Content="No Decision" HorizontalAlignment="Left" FontSize="24" Panel.ZIndex="1" Margin="75,5,0,0" Click="btn_NoDecision_Click" Grid.ColumnSpan="3" Width="135" VerticalAlignment="Top" Background="#FF2F4858" BorderBrush="#FF00A896" Foreground="#FF00A896"/>
         <Viewbox Grid.Row="1">
             <TextBlock x:Name="txt_0_0" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1" Text="_" Tag="0"/>
         </Viewbox>
@@ -54,7 +54,7 @@
             <TextBlock x:Name="txt_2_2" TextWrapping="Wrap" Text="_" TextAlignment="Center" FontFamily="Arial Black" Padding="2,0,2,0" Margin="1,1,1,1" Tag="8"/>
         </Viewbox>
         <ScrollViewer CanContentScroll="True" Grid.RowSpan="1" Grid.ColumnSpan="2" Height="100" Grid.Column="1" Margin="0,4,0,5">
-            <TextBlock x:Name="txt_challenge" FontSize="24" TextWrapping="WrapWithOverflow" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.IsSharedSizeScope="True"/>
+            <TextBlock x:Name="txt_challenge" FontSize="24" TextWrapping="WrapWithOverflow" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.IsSharedSizeScope="True" Foreground="#FF00A896"/>
         </ScrollViewer>
     </Grid>
 </Window>
